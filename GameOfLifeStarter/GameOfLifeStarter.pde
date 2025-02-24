@@ -115,5 +115,16 @@ void mousePress() {
 void keyPressed() {
   if (key == ' ') {
     isPaused = !isPaused;
+  } else if (key == 'c' || key == 'C') {
+    clearGrid();
+  }
+}
+
+void clearGrid() {
+  for (int i = 0; i < grid.length; i++) {
+    for (int j = 0; j < grid[0].length; j++) {
+      grid[i][j] = 0;
+      cellAge[i][j] = 0;
+    }
   }
 }
