@@ -9,7 +9,7 @@ void setup() {
   grid = new int[height / SPACING][width / SPACING];
 
   // populate initial grid
-  // your code here.
+  // your code here
 
 }
 
